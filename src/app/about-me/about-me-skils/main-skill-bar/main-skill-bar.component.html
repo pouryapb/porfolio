@@ -1,0 +1,15 @@
+<div class="my-2 gap-5 text-4xl sm:flex sm:flex-row">
+  <div class="gap-4 sm:flex sm:w-40">
+    <fa-icon [className]="skillDef.brandColor" [icon]="skillDef.icon"></fa-icon>
+    <span class="text-3xl font-bold dark:text-stone-300">
+      {{ skillDef.name }}
+    </span>
+  </div>
+  <div class="relative my-2 h-5 grow overflow-clip">
+    <div class="stripes absolute z-0 h-5 w-full rounded-3xl"></div>
+    <div
+      class="has-tooltip tooltip absolute z-10 h-5 rounded-3xl bg-stone-800 bg-opacity-60 mix-blend-overlay drop-shadow-2xl"
+      [ngStyle]="{ width: +skillDef.level * 100 + '%' }"
+    ></div>
+  </div>
+</div>
