@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import {
   IconDefinition,
   faAngular,
@@ -24,9 +24,9 @@ export interface MainSkillDefinition {
   imports: [CommonModule, MainSkillBarComponent, OtherSkillsComponent],
   templateUrl: './about-me-skils.component.html',
   styleUrl: './about-me-skils.component.css',
-  host: { class: 'grow' },
 })
 export class AboutMeSkilsComponent {
+  @HostBinding('class') hostClassNames = 'grow';
   mainSkils: MainSkillDefinition[] = [
     {
       name: 'React.Js',
