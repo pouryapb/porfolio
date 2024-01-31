@@ -19,17 +19,10 @@ export class ProjectsSectionComponent implements OnInit {
   constructor(private githubApi: GithubApiService) {}
 
   ngOnInit(): void {
-    this.githubApi.faceAct.pipe(take(1)).subscribe((data) => {
-      this.repos.push(data);
-    });
-    this.githubApi.faceActBack.pipe(take(1)).subscribe((data) => {
-      this.repos.push(data);
-    });
-    this.githubApi.bomberman.pipe(take(1)).subscribe((data) => {
-      this.repos.push(data);
-    });
-    this.githubApi.portfolio.pipe(take(1)).subscribe((data) => {
-      this.repos.push(data);
+    this.githubApi.projectsList.forEach((project) => {
+      project.pipe(take(1)).subscribe((data) => {
+        this.repos.push(data);
+      });
     });
   }
 }

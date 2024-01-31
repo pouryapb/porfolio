@@ -6,23 +6,22 @@ import { Endpoints } from '@octokit/types';
   providedIn: 'root',
 })
 export class GithubApiService {
-  faceAct;
-  faceActBack;
-  bomberman;
-  portfolio;
+  projectsList;
 
   constructor(http: HttpClient) {
-    this.faceAct = http.get<
-      Endpoints['GET /repos/{owner}/{repo}']['response']['data']
-    >('https://api.github.com/repos/pouryapb/faceact');
-    this.faceActBack = http.get<
-      Endpoints['GET /repos/{owner}/{repo}']['response']['data']
-    >('https://api.github.com/repos/pouryapb/faceact-backend');
-    this.bomberman = http.get<
-      Endpoints['GET /repos/{owner}/{repo}']['response']['data']
-    >('https://api.github.com/repos/pouryapb/bomberman');
-    this.portfolio = http.get<
-      Endpoints['GET /repos/{owner}/{repo}']['response']['data']
-    >('https://api.github.com/repos/pouryapb/portfolio');
+    this.projectsList = [
+      http.get<Endpoints['GET /repos/{owner}/{repo}']['response']['data']>(
+        'https://api.github.com/repos/pouryapb/faceact',
+      ),
+      http.get<Endpoints['GET /repos/{owner}/{repo}']['response']['data']>(
+        'https://api.github.com/repos/pouryapb/Definitioner-bot',
+      ),
+      http.get<Endpoints['GET /repos/{owner}/{repo}']['response']['data']>(
+        'https://api.github.com/repos/pouryapb/bomberman',
+      ),
+      http.get<Endpoints['GET /repos/{owner}/{repo}']['response']['data']>(
+        'https://api.github.com/repos/pouryapb/portfolio',
+      ),
+    ];
   }
 }

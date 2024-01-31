@@ -7,7 +7,7 @@ import {
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { faBlazor, faCS, faRedux, faTs } from '../../../customIcons';
+import { faCS, faRedux, faTs } from '../../../customIcons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -24,6 +24,5 @@ export class OtherSkillsComponent {
   faTs = faTs;
   faNode = faNodeJs;
   faCS = faCS;
-  faBlazor = faBlazor;
   faRedux = faRedux;
 }
