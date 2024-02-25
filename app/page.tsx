@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <p className="[&>span]:block [&>span]:select-none">
+    <p className="transition-all [&>span]:block [&>span]:select-none">
       <span>I was born in 1998</span>
       <span>in Rasht, Iran.</span>
       <span>At the age of 15 I</span>
