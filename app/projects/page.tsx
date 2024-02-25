@@ -2,7 +2,7 @@ import GithubLink from "../components/githubLink";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-5">
       <p className="mb-5 w-80 text-justify font-sans font-semibold">
         I gained valuable knowledge and skills through these projects, even
         though they might appear modest.

@@ -11,7 +11,7 @@ export default function Nav() {
         className={
           pathname === "/"
             ? "opacity-40 before:pr-1 before:content-['●']"
-            : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
+            : "transition-all duration-300 hover:translate-x-1 hover:opacity-40"
         }
       >
         <Link href="/">Home</Link>
@@ -20,7 +20,7 @@ export default function Nav() {
         className={
           pathname === "/skills"
             ? "opacity-40 before:pr-1 before:content-['●']"
-            : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
+            : "transition-all duration-300 hover:translate-x-1 hover:opacity-40"
         }
       >
         <Link href="/skills">Skills</Link>
@@ -29,7 +29,7 @@ export default function Nav() {
         className={
           pathname === "/projects"
             ? "opacity-40 before:pr-1 before:content-['●']"
-            : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
+            : "transition-all duration-300 hover:translate-x-1 hover:opacity-40"
         }
       >
         <Link href="/projects">Projects</Link>
@@ -38,7 +38,7 @@ export default function Nav() {
         className={
           pathname === "/contact"
             ? "opacity-40 before:pr-1 before:content-['●']"
-            : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
+            : "transition-all duration-300 hover:translate-x-1 hover:opacity-40"
         }
       >
         <Link href="/contact">Contact</Link>
