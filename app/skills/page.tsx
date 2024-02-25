@@ -9,7 +9,7 @@ import gitIcon from "@/public/git.svg";
 export default function Skills() {
   return (
     <div className="flex h-80 w-96 flex-wrap justify-center gap-1">
-      <p className="mb-5 w-80 border-l-2 pl-2 text-justify font-sans">
+      <p className="mb-5 w-80 border-l-2 pl-2 text-justify font-sans font-semibold">
         I{"'"}m a hands-on individual with a strong grasp of emerging
         technologies. I{"'"}m constantly exploring new tools and enjoy applying
         them to build practical applications.
