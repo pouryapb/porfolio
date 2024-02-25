@@ -36,15 +36,6 @@ export default function Nav() {
       </li>
       <li
         className={
-          pathname === "/info"
-            ? "opacity-40 before:pr-1 before:content-['●']"
-            : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
-        }
-      >
-        <Link href="/info">Info</Link>
-      </li>
-      <li
-        className={
           pathname === "/contact"
             ? "opacity-40 before:pr-1 before:content-['●']"
             : "transition-all duration-300 hover:translate-x-4 hover:opacity-40"
