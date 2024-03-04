@@ -15,10 +15,6 @@ export const metadata: Metadata = {
   description: "Pourya Pourbagheris portfolio page",
 };
 
-export const viewport: Viewport = {
-  userScalable: false,
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
