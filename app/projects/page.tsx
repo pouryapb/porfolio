@@ -8,6 +8,10 @@ export default function Projects() {
         though they might appear modest.
       </p>
       <GithubLink
+        projectName="fem-where-in-the-world"
+        title="Where in the world?"
+      />
+      <GithubLink
         projectName="definitioner-bot"
         title="Telegram Bot (Definitioner)"
       />
